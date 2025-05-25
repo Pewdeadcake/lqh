@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu bút gửi Lại Quang Hưng</title>
+    <style>
+        @font-face {
+            font-family: 'Iciel Brittany Signature Regular';
+            src: url('fonts/IcielBrittanySignature-Regular.woff2') format('woff2'),
+                 url('fonts/IcielBrittanySignature-Regular.woff') format('woff'),
+                 url('fonts/iCielBrittanySignature-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #333; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -999; 
+            background-image: url('wallpaper.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            filter: blur(5px) brightness(0.8); 
+        }
+
+        #hello-kitty-element {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1; 
+            max-width: 250px;
+            width: 60%;
+            height: auto;
+            opacity: 0.6;
+        }
+
+        .container {
+            background-color: #FFF2EB; 
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative; 
+            z-index: 1; 
+        }
+
+        .image-frames {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            margin-bottom: 25px;
+        }
+
+        .image-frame {
+            width: 45%;
+            aspect-ratio: 1 / 1;
+            background-color: #f0f0f0;
+            border-radius: 15px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 0.9em; 
+            color: #555; 
+            overflow: hidden; 
+            border: 2px solid #ddd;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .dear-text {
+            font-family: 'Iciel Brittany Signature Regular', cursive;
+            font-size: 1.8em;
+            font-weight: normal;
+            margin-bottom: 8px;
+            color: #AD1457; 
+        }
+
+        .message-content {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #212121;
+        }
+
+        .signature-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .signature-description {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #424242;
+            margin-bottom: 10px;
+        }
+
+        .signature-image {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
+        }
+
+        .signature-name {
+            font-size: 1em;
+            font-weight: bold;
+            color: #212121;
+        }
+
+        @media (max-width: 480px) {
+            body::before {
+                filter: blur(3px) brightness(0.7); 
+            }
+            #hello-kitty-element {
+                max-width: 180px;
+                width: 50%;
+                opacity: 0.5;
+            }
+            .container {
+                padding: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                background-color: #FFF2EB; 
+            }
+            .image-frame {
+                font-size: 0.8em; 
+            }
+            .dear-text {
+                font-size: 1.5em;
+                margin-bottom: 6px;
+            }
+            .message-content {
+                font-size: 0.95em;
+            }
+            .signature-image {
+                width: 120px;
+            }
+            .signature-section {
+                margin-top: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img id="hello-kitty-element" src="hello_kitty.png" alt="Hello Kitty Background">
+
+    <div class="container">
+        <div class="image-frames">
+            <div class="image-frame">
+                <img src="pic1.png" alt="Ảnh kỷ niệm 1">
+            </div>
+            <div class="image-frame">
+                chờ ảnh 26/5 hihi
+            </div>
+        </div>
+
+        <div class="dear-text" id="dearName">
+            dear Lại Quang Hưng,
+        </div>
+
+        <div class="message-content" id="messageContent">12 năm 1 tình bạn
+thật sự lúc viết cnay t t k thể ngờ dc rằng t với m quen nhau dc tận 12 năm r Hưng a. Từ Thành công B đến ntt xong đến Ngtr BD. V là cả quãng đời hs t đều có m là 1 người bạn đồng hành, 1 người đã chứng kiến hết mọi phiên bản của t từ lúc còn là trẻ con đến lúc 18t. Nhanh thật ý, mới hồi nào lớp 1 m còn buli bố m xong toàn đánh t đến giờ là bạn cùng bàn, à k, cựu bạn cùng bàn. T với m đã đi cùng nhau đến hết quãng đời hs, k thiếu 1 nhịp nào với nhau luôn. Dù nh lúc còn nh bất đồng hay chửi nhau, tình bạn giữa t với m vẫn luôn cứ thế tồn tại, cứ thế tiếp diễn, vết nứt luôn dc hàn gắn và cũng chưa bao giờ có dấu hiệu rạn nứt. Dm tình bạn bền nhất t từng gặp trong suốt 18 năm luôn, và chắc là tình bạn bền nhất trong cả cuộc đời t. T quý m nhiều lắm Hưng ạ, t k thể hiện ra th chứ để có dc ng bạn như m chắc khó mà có đc lắm. Bởi v, đừng, ĐỪNG BAO H VÀ ĐÉO BAO H NGHĨ ĐẾN CHUYỆN TỪ BỎ CÁI TÌNH BẠN NÀY NHÉ. Có thể nh lúc k nch với nhau nhưng tình bạn phải mãi mãi tiếp diễn nhé. À với cả M PHẢI ĐỖ NEU CHO T NHỚ CHƯA!! DCMMM. Thsu t cũng kbt nên viết gì tại có qs nh cái để viết, hôm sen chụp với t 1 bức ảnh chung nữa nhs. T luôn quý m nhiều hơn hqua và sẽ mãi quý m ít hơn ngày mai.
+        </div>
+
+        <div class="signature-section">
+            <div class="signature-description">
+                người bạn 12 năm của m
+            </div>
+            <img src="image_0cc929.png" alt="Chữ ký Khôi" class="signature-image">
+            <div class="signature-name">
+                Nguyễn Cảnh Khôi
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions (nếu cần)
+    </script>
+
+</body>
+</html>
